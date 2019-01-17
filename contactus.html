@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>contact us</title>
+<link rel="stylesheet" href="./css/stylefordifferentboxes.css">
+</head>
+<body>
+        <header>
+                <div class="container">
+                    <div id="branding">
+                            <h2><a class="name" href="index.html"><span>I</span>-GLANCE</a></h2>
+                    </div>
+                    <nav>
+                      <ul>
+                        <li class="current"><a href="index.html">Home</a></li>
+                        <li><a href="aboutus.html">About us</a></li>
+                        <li><a href="contactus.html">Contact Us</a></li>
+                      </ul>
+                    </nav>
+                  </div>
+            </header>
+<div class="main">
+    <h3 id="success"></h3>
+    <div class="head">
+    <h1>Contact Details</h1>
+    </div>
+    <form name="myform" action="" method="POST" onsubmit="return validateForm()">
+        <div class="inputField">
+            <input type="text" name="username" id="username" placeholder="Enter username"/>
+        </div>
+        <div id="error1"></div>
+        <div class="inputField">
+            <input type="email" name="email" id="email" placeholder="Enter email id"/>
+        </div>
+        <div id="error2"></div>
+        <div class="inputField">
+            <textarea name="query" id="query" placeholder="Enter query"></textarea>
+        </div>
+        <div id="error3"></div>
+        <div class="inputField">
+            <select name="country" id="country">
+            <option value="">--Select Country--</option>
+            <option value="1">India</option>
+            <option value="2">Pakistan</option>
+            <option value="3">sri lanka</option>
+            <option value="4">USA</option>
+            <option value="5">Afganistan</option>
+        </div>
+        <div id="error4"></div>
+        <div class="inputField">
+            <input type="submit" name="submit" value="Submit" />
+        </div>
+    </form>
+<script type="text/javascript">
+    function validateForm()
+    {
+        var username = document.getElementById("username").value;
+        var email =  document.getElementById("email").value;
+        var query =  document.getElementById("query").value;
+        var country =  document.getElementById("country").value;
+        if(username=="")
+        {
+            document.getElementById("error1").innerHTML='**Enter correct name';
+            document.myform.username.focus();
+            return false;
+        }
+        if(email=="")
+        {
+            document.getElementById("error2").innerHTML='**Enter correct email id';
+            document.myform.email.focus();
+            return false;
+        }
+        if(query=="")
+        {
+            document.getElementById("error3").innerHTML='**Enter query';
+            document.myform.query.focus();
+            return false;
+        }
+        if(country=="")
+        {
+            document.getElementById("error4").innerHTML='**select country';
+            document.myform.country.focus();
+            return false;
+        }
+        if(username!="" && email!="" && query!="" && country!="")
+        {
+            document.getElementById("success").innerHTML = "Your form is submitted successfully";
+            return false;
+        }
+    }
+</script>
+</div>
+</body>
+</html>

@@ -1,0 +1,154 @@
+body{
+    background-color: gainsboro;
+    padding: 0;
+    margin: 0;
+    }
+    .first{
+    margin-top: 30px;
+    margin-right: 50px;
+    margin-left: 100px;
+    float: left;
+    height: 200px;
+    width: 200px;
+    background-color: brown;
+    /*background-image: url('img/oned.jpg');*/
+    }
+    .sec{
+    margin-top: 30px;
+    margin-right: 50px;
+    margin-left: 100px;
+    float: left;
+    height: 200px;
+    width: 200px;
+    background-color: brown;
+    /*background-image: url('img/oned.jpg');*/
+    
+    }
+    .third{
+    margin-top: 30px;
+    margin-right: 50px;
+    margin-left: 100px;
+    float: left;
+    height: 200px;
+    width: 200px;
+    background-color: brown;
+  /*  background-image: url('img/oned.jpg'); */}
+
+  .fourth{
+    margin-top: 100px;
+    margin-right: 50px;
+    margin-left: 100px;
+    float: left;
+    height: 200px;
+    width: 200px;
+    background-color: brown;
+    }
+
+    .fifth{
+    margin-top: 100px;
+    margin-right: 50px;
+    margin-left: 100px;
+    float: left;
+    height: 200px;
+    width: 200px;
+    background-color: brown;
+    }
+   p{
+    float: left;
+    /*margin-right: 500px; */
+    }
+
+    /* header */
+
+  span{
+    color: red;
+  }
+    header #branding{
+  float:left;
+  margin-left: 35px;
+}
+
+header{
+  background-color: white;
+  color:black;
+  padding-top:30px;
+  min-height:70px;
+  border-bottom: black 3px solid;
+}
+
+.name{
+  color:black;
+  font-size: 24px;
+}
+
+header a{
+  color:grey;
+  text-decoration:none;
+  text-transform: uppercase;
+  font-size:16px;
+}
+
+header #branding h1{
+  margin:0;
+}
+
+header li{
+  float:left;
+  display:inline;
+  padding: 0 20px 0 20px;
+}
+
+header .highlight, header .current a{
+  color:black;
+  font-weight:bold;
+}
+
+header a:hover{
+  color:black;
+  font-weight:bold;
+}
+
+header nav{
+  float:right;
+  margin-top:10px;
+  margin-right: 150px;
+}
+
+.one{
+  font-size: 21px;
+  margin-top: 80px;
+  margin-left: 50px;
+}
+.two{
+  font-size: 21px;
+  margin-top: 18px;
+  margin-left: 50px;
+
+}
+.three{
+  font-size: 21px;
+  margin-top: 18px;
+  margin-left: 50px;
+}
+
+.main{
+  border: 3px inset;
+  height:380px;
+  width:350px;
+  margin: 50px 0px 20px 430px;
+  background-color:white;
+}
+
+.inputField{
+  padding: 10px;
+  margin: 0px 0px 0px 80px;
+}
+
+.head{
+  margin-left: 80px;
+}
+
+#error1,#error2,#error3,#error4{
+color:red;
+margin-left:25%;
+}
